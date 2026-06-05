@@ -6,11 +6,10 @@ cmd = sys.argv[1] if len(sys.argv) > 1 else ""
 
 # Exécuter la commande
 if cmd == "help":
-    output = "Commandes : help, time"
+    print("Commandes : help, time, date")
 elif cmd == "time":
-    output = time.strftime("%H:%M:%S")
+    print(time.strftime("%H:%M:%S"))
+elif cmd == "date":
+    print(time.strftime("%d/%m/%Y"))
 else:
-    output = f"{cmd} est une commande inconnue."
-
-# Afficher la réponse (GitHub Actions la récupère)
-print(output)
+    print(f"{cmd} est une commande inconnue.")
