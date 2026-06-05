@@ -1,13 +1,8 @@
-import json
+import sys
 import time
 
-# Lire la commande depuis command.json
-try:
-    with open("command.json") as f:
-        data = json.load(f)
-        cmd = data.get("cmd", "")
-except:
-    cmd = ""
+# Récupérer la commande passée en argument
+cmd = sys.argv[1] if len(sys.argv) > 1 else ""
 
 # Exécuter la commande
 if cmd == "help":
@@ -17,6 +12,5 @@ elif cmd == "time":
 else:
     output = f"{cmd} est une commande inconnue."
 
-# Écrire la réponse dans response.json
-with open("response.json", "w") as f:
-    json.dump({"output": output}, f)
+# Afficher la réponse (GitHub Actions la récupère)
+print(output)
