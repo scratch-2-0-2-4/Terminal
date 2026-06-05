@@ -1,0 +1,42 @@
+name: terminal-issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  run-terminal:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Extract command
+      id: extract
+      run: |
+        body="${{ github.event.issue.body }}"
+        cmd=$(echo "$body" | sed 's/^\/cmd //')
+        echo "cmd=$cmd" >> $GITHUB_OUTPUT
+
+    - name: Run terminal
+      id: run
+      run: |
+        output=$(python3 terminal.py "${{ steps.extract.outputs.cmd }}")
+        echo "output=$output" >> $GITHUB_OUTPUT
+
+    - name: Reply to issue
+      uses: peter-evans/create-or-update-comment@v3
+      with:
+        issue-number: ${{ github.event.issue.number }}
+        body: |
+          **Commande exécutée :** `${{ steps.extract.outputs.cmd }}`
+          **Réponse :**
+          ```
+          ${{ steps.run.outputs.output }}
+          ```
