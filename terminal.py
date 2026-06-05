@@ -1,10 +1,8 @@
 import sys
 import time
 
-# Récupérer la commande passée en argument
 cmd = sys.argv[1] if len(sys.argv) > 1 else ""
 
-# Exécuter la commande
 if cmd == "help":
     print("Commandes : help, time, date")
 elif cmd == "time":
