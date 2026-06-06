@@ -5,7 +5,7 @@ import random
 cmd = sys.argv[1] if len(sys.argv) > 1 else ""
 
 if cmd == "help":
-    print("Commandes : help, time, date, IA, random")
+    print("Commandes : help, time, date, IA, random, idée")
 
 elif cmd == "time":
     print(time.strftime("%H:%M:%S"))
@@ -19,8 +19,9 @@ elif cmd == "IA":
 elif cmd == "random":
     print(random.randint(1, 100))
 
-elif cmd == "scratch_2_0_2_4" or cmd == "Scratch_2_0_2_4"
-   print("[Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/) est le scratcheur qui à crée ce terminal.")
+elif cmd == "idée"
+    print("Oh, tu as une idée de commande... Donne la à [@Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/#comments)")
+   
 
 else:
     print(f"{cmd} est une commande inconnue.")
