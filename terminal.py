@@ -19,7 +19,7 @@ elif cmd == "IA":
 elif cmd == "random":
     print(random.randint(1, 100))
 
-elif cmd == "idée"
+elif cmd == "idée":
     print("Oh, tu as une idée de commande... Donne la à [@Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/#comments)")
    
 
