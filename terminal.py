@@ -21,7 +21,6 @@ elif cmd == "random":
 
 elif cmd == "idée":
     print("Oh, tu as une idée de commande... Donne la à [@Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/#comments)")
-   
 
 else:
     print(f"{cmd} est une commande inconnue.")
