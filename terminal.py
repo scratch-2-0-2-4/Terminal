@@ -19,5 +19,8 @@ elif cmd == "IA":
 elif cmd == "random":
     print(random.randint(1, 100))
 
+elif cmd == "scratch_2_0_2_4" or cmd == "Scratch_2_0_2_4"
+   print("[Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/) est le scratcheur qui à crée ce terminal.
+
 else:
     print(f"{cmd} est une commande inconnue.")
