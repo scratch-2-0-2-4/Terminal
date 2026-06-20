@@ -22,14 +22,14 @@ elif cmd == "random":
 elif cmd == "idée":
     print("Oh, tu as une idée de commande... Donne la à [@Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/#comments)")
 
-elif cmd == "pub" or cmd == "ad" :
+elif cmd == "pub" or cmd == "ad":
     print("Contactez [@Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/#comments) pour mettre votre pub ici.")
 
-elif cmd == "LGDC Forum"
+elif cmd == "LGDC Forum":
     print("Découvrez [LGDC Forum](https://lgdc.flarum.cloud), un forum pour parler de LGDC, Scratch et bien + encore !")
 
-elif cmd == "example"
-   print("Ceci est un example de message. Il vous prouve que le terminal fonctionne."
+elif cmd == "example":
+    print("Ceci est un example de message. Il vous prouve que le terminal fonctionne.")
 
 else:
     print(f"{cmd} est une commande inconnue.")
