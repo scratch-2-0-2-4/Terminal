@@ -25,12 +25,10 @@ COMMANDS = {
     "example": "Afficher un message d'exemple",
 }
 
-
 def print_help():
     print("Commandes disponibles :")
     for cmd, desc in sorted(COMMANDS.items()):
         print(f"  {cmd:12} - {desc}")
-
 
 def handle_command(cmd):
     if not cmd:
@@ -76,7 +74,6 @@ def handle_command(cmd):
 
     return 0
 
-
 def main(argv=None):
     if argv is None:
         argv = sys.argv[1:]
@@ -97,7 +94,6 @@ def main(argv=None):
 
     cmd = args.command or ""
     return handle_command(cmd)
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
