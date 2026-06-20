@@ -4,13 +4,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # Permet au workflow de pousser du code
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Your step here
         run: |
@@ -21,5 +23,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Update from workflow"
-          git push
+          git commit -m "Update from workflow" || echo "Nothing to commit"
+          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
