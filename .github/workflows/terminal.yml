@@ -1,34 +1,25 @@
 name: terminal
 
 on:
-  schedule:
-    - cron: "* * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write  # Permet au workflow de pousser du code
+
 jobs:
-  run-python:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
-
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.10"
-
-    - name: Install dependencies
-      run: |
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Run script
-      run: python3 terminal.py
-
-    - name: Commit output
-      run: |
-        git config user.name "github-actions"
-        git config user.email "actions@github.com"
-        git add .
-        git commit -m "Update output" || echo "Nothing to commit"
-        git push
+      - uses: actions/checkout@v4
+      
+      - name: Your step here
+        run: |
+          # vos commandes
+          
+      - name: Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update from workflow"
+          git push
