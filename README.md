@@ -4,6 +4,11 @@ Pour utiliser le terminal, [créez une nouvelle issue dans ce dépôt](https://g
 ```
 /cmd help
 ```
+#### Info 
+Vous pouvez très bien mettre du texte **avant** le `/cmd`. Example :
+```
+Ma commande : /cmd help
+```
 
 ### Commandes
 La commande `/cmd help` vous donne une liste des commandes, donc pas besoin d'en faire une liste ici.
