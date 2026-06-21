@@ -1,4 +1,4 @@
-# Terminal-test
+# Terminal
 
 Pour utiliser le terminal, [créez une nouvelle issue dans ce dépôt](https://github.com/scratch-2-0-2-4/Terminal/issues/new) avec comme titre ce que vous voulez et comme texte, la commande, par exemple :
 ```
