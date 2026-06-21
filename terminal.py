@@ -32,4 +32,4 @@ elif cmd == "example":
     print("Ceci est un example de message. Il vous prouve que le terminal fonctionne.")
 
 else:
-    print(f"{cmd} est une commande inconnue.")
+    print(f"**Erreur 404 :** {cmd} est une commande inconnue. Mais vous pouvez la proposer à [@Scratch_2_0_2_4](https://scratch.mit.edu/users/Scratch_2_0_2_4/#comments) pour qu'il l'ajoute.")
