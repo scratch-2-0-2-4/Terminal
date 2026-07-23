@@ -3,7 +3,7 @@ import time
 import random
 
 version = "1.1"
-print(f"Terminal [v. {version}]")
+print(f"\n Terminal [v. {version}]")
 print("Tape 'help' pour une liste des commandes. \n")
 cmd = input("Commande >>> ")
 
