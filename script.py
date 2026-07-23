@@ -2,10 +2,10 @@ import sys
 import time
 import random
 
-print(f"""Terminal [v. {version}]""")
+version = "1.1"
+print(f"Terminal [v. {version}]")
 print("Tape 'help' pour une liste des commandes. \n")
 cmd = input("Commande >>> ")
-version = "1.1"
 
 
 if cmd == "help":
@@ -27,7 +27,7 @@ elif cmd == "exemple":
     print("Ceci est un example de message. Il vous prouve que le terminal fonctionne.")
 
 elif cmd == "version" :
-    print(f"""[v. {version}]""")
+    print(f"[v. {version}]")
 
 else:
     print(f"Erreur 404 : {cmd} est une commande inconnue.")
