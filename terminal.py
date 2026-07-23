@@ -13,9 +13,6 @@ elif cmd == "time":
 elif cmd == "date":
     print(time.strftime("%d/%m/%Y"))
 
-elif cmd == "IA":
-    print("À venir pour bientôt. Promis !")
-
 elif cmd == "random":
     print(random.randint(1, 100))
 
