@@ -2,10 +2,14 @@ import sys
 import time
 import random
 
-cmd = sys.argv[1] if len(sys.argv) > 1 else ""
+print(f"Terminal [v. {version}]")
+print("Tape 'help' pour une liste des commandes. \n")
+cmd = input("Commande >>> ")
+version = "1.1"
+
 
 if cmd == "help":
-    print("Commandes : help, time, date, IA, random, idée, pub (=ad), LGDC Forum")
+    print("Commandes : help, time, date, random, version, exemple, LGDC Forum")
 
 elif cmd == "time":
     print(time.strftime("%H:%M:%S"))
@@ -19,8 +23,11 @@ elif cmd == "random":
 elif cmd == "LGDC Forum":
     print("Découvrez LGDC Forum ( https://lgdc.flarum.cloud ), un forum pour parler de LGDC, Scratch et bien + encore !")
 
-elif cmd == "example":
+elif cmd == "exemple":
     print("Ceci est un example de message. Il vous prouve que le terminal fonctionne.")
 
+elif cmd == "version" :
+    print(f"[v. {verion}]")
+
 else:
-    print(f"**Erreur 404 :** {cmd} est une commande inconnue.")
+    print(f"Erreur 404 : {cmd} est une commande inconnue.")
