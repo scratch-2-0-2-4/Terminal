@@ -12,3 +12,35 @@ Ma commande : /cmd help
 
 ### Commandes
 La commande `/cmd help` vous donne une liste des commandes, donc pas besoin d'en faire une liste ici.
+
+<hr>
+
+# Instalation
+
+1. cloner de dépot :
+```Bash
+git clone https://github.com/scratch-2-0-2-4/Terminal.git
+```
+2. Aller dans le dossier :
+```Bash
+cd Terminal
+```
+
+4. Lancer le programme :
+
+   **MacOS / Linux :**
+   ```Bash
+   python3 script.py
+   ```
+
+   **Windows :**
+   ```Bash
+   python script.py
+   ```
+
+### Mise à jour :
+```Bash
+cd Terminal
+git pull origin main
+```
+
