@@ -27,7 +27,7 @@ elif cmd == "exemple":
     print("Ceci est un example de message. Il vous prouve que le terminal fonctionne.")
 
 elif cmd == "version" :
-    print(f"[v. {verion}]")
+    print(f"[v. {version}]")
 
 else:
     print(f"Erreur 404 : {cmd} est une commande inconnue.")
