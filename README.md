@@ -26,7 +26,7 @@ git clone https://github.com/scratch-2-0-2-4/Terminal.git
 cd Terminal
 ```
 
-4. Lancer le programme :
+3. Lancer le programme :
 
    **MacOS / Linux :**
    ```Bash
